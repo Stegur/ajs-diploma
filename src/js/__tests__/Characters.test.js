@@ -1,3 +1,4 @@
+import Character from '../Character';
 import Bowman from '../characters/Bowman';
 import Daemon from '../characters/Daemon';
 import Magician from '../characters/Magician';
@@ -84,4 +85,11 @@ describe('constructor', () => {
     expect(hero).toEqual(expectedVampire);
   });
 
+  test('shoud throw an Error', () => {
+    const result = () => {
+      // eslint-disable-next-line no-unused-vars
+      const hero = new Character(3);
+    };
+    expect(result).toThrow(new Error('Экземпляры класа Character не должны создаваться'));
+  });
 });

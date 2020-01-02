@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/vgqvi8a2gd5yi9bt/branch/master?svg=true)](https://ci.appveyor.com/project/Stegur/ajs-diploma/branch/master)
+
 # AJS. Retro Game
 
 ###### tags: `netology` `advanced js`

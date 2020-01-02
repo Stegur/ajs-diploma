@@ -78,51 +78,51 @@ body {
 }
 
 .board.prairie {
-  --map-tile-top-left-require: require('../img/prairie/map-tile-top-left.png');
-  --map-tile-top-require: require('../img/prairie/map-tile-top.png');
-  --map-tile-top-right-require: require('../img/prairie/map-tile-top-right.png');
-  --map-tile-bottom-left-require: require('../img/prairie/map-tile-bottom-left.png');
-  --map-tile-bottom-require: require('../img/prairie/map-tile-bottom.png');
-  --map-tile-bottom-right-require: require('../img/prairie/map-tile-bottom-right.png');
-  --map-tile-left-require: require('../img/prairie/map-tile-left.png');
-  --map-tile-right-require: require('../img/prairie/map-tile-right.png');
-  --map-tile-center-require: require('../img/prairie/map-tile-center.png');
+  --map-tile-top-left-url: url('../img/prairie/map-tile-top-left.png');
+  --map-tile-top-url: url('../img/prairie/map-tile-top.png');
+  --map-tile-top-right-url: url('../img/prairie/map-tile-top-right.png');
+  --map-tile-bottom-left-url: url('../img/prairie/map-tile-bottom-left.png');
+  --map-tile-bottom-url: url('../img/prairie/map-tile-bottom.png');
+  --map-tile-bottom-right-url: url('../img/prairie/map-tile-bottom-right.png');
+  --map-tile-left-url: url('../img/prairie/map-tile-left.png');
+  --map-tile-right-url: url('../img/prairie/map-tile-right.png');
+  --map-tile-center-url: url('../img/prairie/map-tile-center.png');
 }
 
 .board.desert {
-  --map-tile-top-left-require: require('../img/desert/map-tile-top-left.png');
-  --map-tile-top-require: require('../img/desert/map-tile-top.png');
-  --map-tile-top-right-require: require('../img/desert/map-tile-top-right.png');
-  --map-tile-bottom-left-require: require('../img/desert/map-tile-bottom-left.png');
-  --map-tile-bottom-require: require('../img/desert/map-tile-bottom.png');
-  --map-tile-bottom-right-require: require('../img/desert/map-tile-bottom-right.png');
-  --map-tile-left-require: require('../img/desert/map-tile-left.png');
-  --map-tile-right-require: require('../img/desert/map-tile-right.png');
-  --map-tile-center-require: require('../img/desert/map-tile-center.png');
+  --map-tile-top-left-url: url('../img/desert/map-tile-top-left.png');
+  --map-tile-top-url: url('../img/desert/map-tile-top.png');
+  --map-tile-top-right-url: url('../img/desert/map-tile-top-right.png');
+  --map-tile-bottom-left-url: url('../img/desert/map-tile-bottom-left.png');
+  --map-tile-bottom-url: url('../img/desert/map-tile-bottom.png');
+  --map-tile-bottom-right-url: url('../img/desert/map-tile-bottom-right.png');
+  --map-tile-left-url: url('../img/desert/map-tile-left.png');
+  --map-tile-right-url: url('../img/desert/map-tile-right.png');
+  --map-tile-center-url: url('../img/desert/map-tile-center.png');
 }
 
 .board.arctic {
-  --map-tile-top-left-require: require('../img/arctic/map-tile-top-left.png');
-  --map-tile-top-require: require('../img/arctic/map-tile-top.png');
-  --map-tile-top-right-require: require('../img/arctic/map-tile-top-right.png');
-  --map-tile-bottom-left-require: require('../img/arctic/map-tile-bottom-left.png');
-  --map-tile-bottom-require: require('../img/arctic/map-tile-bottom.png');
-  --map-tile-bottom-right-require: require('../img/arctic/map-tile-bottom-right.png');
-  --map-tile-left-require: require('../img/arctic/map-tile-left.png');
-  --map-tile-right-require: require('../img/arctic/map-tile-right.png');
-  --map-tile-center-require: require('../img/arctic/map-tile-center.png');
+  --map-tile-top-left-url: url('../img/arctic/map-tile-top-left.png');
+  --map-tile-top-url: url('../img/arctic/map-tile-top.png');
+  --map-tile-top-right-url: url('../img/arctic/map-tile-top-right.png');
+  --map-tile-bottom-left-url: url('../img/arctic/map-tile-bottom-left.png');
+  --map-tile-bottom-url: url('../img/arctic/map-tile-bottom.png');
+  --map-tile-bottom-right-url: url('../img/arctic/map-tile-bottom-right.png');
+  --map-tile-left-url: url('../img/arctic/map-tile-left.png');
+  --map-tile-right-url: url('../img/arctic/map-tile-right.png');
+  --map-tile-center-url: url('../img/arctic/map-tile-center.png');
 }
 
 .board.mountain {
-  --map-tile-top-left-require: require('../img/mountain/map-tile-top-left.png');
-  --map-tile-top-require: require('../img/mountain/map-tile-top.png');
-  --map-tile-top-right-require: require('../img/mountain/map-tile-top-right.png');
-  --map-tile-bottom-left-require: require('../img/mountain/map-tile-bottom-left.png');
-  --map-tile-bottom-require: require('../img/mountain/map-tile-bottom.png');
-  --map-tile-bottom-right-require: require('../img/mountain/map-tile-bottom-right.png');
-  --map-tile-left-require: require('../img/mountain/map-tile-left.png');
-  --map-tile-right-require: require('../img/mountain/map-tile-right.png');
-  --map-tile-center-require: require('../img/mountain/map-tile-center.png');
+  --map-tile-top-left-url: url('../img/mountain/map-tile-top-left.png');
+  --map-tile-top-url: url('../img/mountain/map-tile-top.png');
+  --map-tile-top-right-url: url('../img/mountain/map-tile-top-right.png');
+  --map-tile-bottom-left-url: url('../img/mountain/map-tile-bottom-left.png');
+  --map-tile-bottom-url: url('../img/mountain/map-tile-bottom.png');
+  --map-tile-bottom-right-url: url('../img/mountain/map-tile-bottom-right.png');
+  --map-tile-left-url: url('../img/mountain/map-tile-left.png');
+  --map-tile-right-url: url('../img/mountain/map-tile-right.png');
+  --map-tile-center-url: url('../img/mountain/map-tile-center.png');
 }
 
 .map-tile {
@@ -131,39 +131,39 @@ body {
 }
 
 .map-tile-top-left {
-  background: var(--map-tile-top-left-require);
+  background: var(--map-tile-top-left-url);
 }
 
 .map-tile-top {
-  background: var(--map-tile-top-require);
+  background: var(--map-tile-top-url);
 }
 
 .map-tile-top-right {
-  background: var(--map-tile-top-right-require);
+  background: var(--map-tile-top-right-url);
 }
 
 .map-tile-bottom-left {
-  background: var(--map-tile-bottom-left-require);
+  background: var(--map-tile-bottom-left-url);
 }
 
 .map-tile-bottom {
-  background: var(--map-tile-bottom-require);
+  background: var(--map-tile-bottom-url);
 }
 
 .map-tile-bottom-right {
-  background: var(--map-tile-bottom-right-require);
+  background: var(--map-tile-bottom-right-url);
 }
 
 .map-tile-left {
-  background: var(--map-tile-left-require);
+  background: var(--map-tile-left-url);
 }
 
 .map-tile-right {
-  background: var(--map-tile-right-require);
+  background: var(--map-tile-right-url);
 }
 
 .map-tile-center {
-  background: var(--map-tile-center-require);
+  background: var(--map-tile-center-url);
 }
 
 .character {
@@ -174,35 +174,35 @@ body {
 }
 
 .character.generic {
-  background: require('../img/characters/generic.png');
+  background: url('../img/characters/generic.png');
 }
 
 .character.bowman {
-  background: require('../img/characters/bowman.png');
+  background: url('../img/characters/bowman.png');
 }
 
 .character.daemon {
-  background: require('../img/characters/daemon.png');
+  background: url('../img/characters/daemon.png');
 }
 
 .character.magician {
-  background: require('../img/characters/magician.png');
+  background: url('../img/characters/magician.png');
 }
 
 .character.swordsman {
-  background: require('../img/characters/swordsman.png');
+  background: url('../img/characters/swordsman.png');
 }
 
 .character.undead {
-  background: require('../img/characters/undead.png');
+  background: url('../img/characters/undead.png');
 }
 
 .character.vampire {
-  background: require('../img/characters/vampire.png');
+  background: url('../img/characters/vampire.png');
 }
 
 .character.zombie {
-  background: require('../img/characters/zombie.png');
+  background: url('../img/characters/zombie.png');
 }
 
 .health-level {

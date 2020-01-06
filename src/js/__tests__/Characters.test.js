@@ -10,7 +10,7 @@ const expectedBowman = {
   type: 'bowman',
   attack: 25,
   defence: 25,
-  health: 50,
+  health: 100,
   level: 1,
 };
 
@@ -18,7 +18,7 @@ const expectedDaemon = {
   type: 'daemon',
   attack: 10,
   defence: 40,
-  health: 50,
+  health: 100,
   level: 2,
 };
 
@@ -26,7 +26,7 @@ const expectedMagician = {
   type: 'magician',
   attack: 10,
   defence: 40,
-  health: 50,
+  health: 100,
   level: 3,
 };
 
@@ -34,7 +34,7 @@ const expectedSwordsman = {
   type: 'swordsman',
   attack: 40,
   defence: 10,
-  health: 50,
+  health: 100,
   level: 1,
 };
 
@@ -42,7 +42,7 @@ const expectedUndead = {
   type: 'undead',
   attack: 25,
   defence: 25,
-  health: 50,
+  health: 100,
   level: 2,
 };
 
@@ -50,46 +50,54 @@ const expectedVampire = {
   type: 'vampire',
   attack: 40,
   defence: 10,
-  health: 50,
+  health: 100,
   level: 3,
 };
 
 describe('constructor', () => {
-  test('shoud return new Bowman', () => {
-    const hero = new Bowman('bowman', 1);
+  test('should return new Bowman', () => {
+    const hero = new Bowman(1);
     expect(hero).toEqual(expectedBowman);
   });
 
-  test('shoud return new Daemon', () => {
-    const hero = new Daemon('daemon', 2);
+  test('should return new Daemon', () => {
+    const hero = new Daemon(2);
     expect(hero).toEqual(expectedDaemon);
   });
 
-  test('shoud return new Magician', () => {
-    const hero = new Magician('magician', 3);
+  test('should return new Magician', () => {
+    const hero = new Magician(3);
     expect(hero).toEqual(expectedMagician);
   });
 
-  test('shoud return new Swordsman', () => {
-    const hero = new Swordsman('swordsman', 1);
+  test('should return new Swordsman', () => {
+    const hero = new Swordsman(1);
     expect(hero).toEqual(expectedSwordsman);
   });
 
-  test('shoud return new Undead', () => {
-    const hero = new Undead('undead', 2);
+  test('should return new Undead', () => {
+    const hero = new Undead(2);
     expect(hero).toEqual(expectedUndead);
   });
 
-  test('shoud return new Vampire', () => {
-    const hero = new Vampire('vampire', 3);
+  test('should return new Vampire', () => {
+    const hero = new Vampire(3);
     expect(hero).toEqual(expectedVampire);
   });
 
-  test('shoud throw an Error', () => {
+  test('should throw an Error', () => {
     const result = () => {
       // eslint-disable-next-line no-unused-vars
       const hero = new Character(3);
     };
     expect(result).toThrow(new Error('Экземпляры класа Character не должны создаваться'));
   });
+});
+
+test('Hero should level Up', () => {
+  const hero = new Vampire(3);
+  hero.health = 19;
+  hero.levelUp();
+  expect(hero.level).toBe(4);
+  expect(hero.health).toBe(99);
 });

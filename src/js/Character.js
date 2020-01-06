@@ -3,11 +3,24 @@ export default class Character {
     this.level = level;
     this.attack = 0;
     this.defence = 0;
-    this.health = 50;
+    this.health = 100;
     this.type = type;
     // TODO: throw error if user use "new Character()"
     if (new.target.name === 'Character') {
       throw new Error('Экземпляры класа Character не должны создаваться');
+    }
+  }
+
+  levelUp() {
+    this.level += 1;
+
+    this.attack = Math.max(this.attack, this.attack * (1.8 - this.health / 100));
+    this.defence = Math.max(this.defence, this.defence * (1.8 - this.health / 100));
+
+    if (this.health >= 20) {
+      this.health = 100;
+    } else {
+      this.health += 80;
     }
   }
 }

@@ -3,8 +3,8 @@ import Swordman from '../characters/Swordsman';
 import Bowman from '../characters/Bowman';
 
 const heroes = [
-  new Bowman('bowman', 1),
-  new Swordman('swordsman', 1),
+  new Bowman(1),
+  new Swordman(1),
 ];
 
 describe('generateTeam', () => {

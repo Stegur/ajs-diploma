@@ -95,9 +95,11 @@ describe('constructor', () => {
 });
 
 test('Hero should level Up', () => {
-  const hero = new Vampire(3);
+  const hero = new Bowman(1);
   hero.health = 19;
   hero.levelUp();
-  expect(hero.level).toBe(4);
+  expect(hero.level).toBe(2);
   expect(hero.health).toBe(99);
+  expect(hero.attack).toBe(25);
+  expect(hero.defence).toBe(25);
 });

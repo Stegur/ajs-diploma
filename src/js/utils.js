@@ -49,3 +49,29 @@ export function calcHealthLevel(health) {
 export function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+export function pointToArray(point) {
+  if (point > 63) {
+    throw new Error('Координата не может быть больше 63!');
+  }
+
+  let x;
+
+  if (point === 0) {
+    x = 0;
+  } else {
+    x = Math.floor(point / 8);
+  }
+
+  const y = point % 8;
+
+  return [x, y];
+}
+
+export function arrayToPoint([x, y]) {
+  if (x > 7 || y > 7) {
+    throw new Error('Координата не может быть больше 7!');
+  }
+
+  return x * 8 + y;
+}

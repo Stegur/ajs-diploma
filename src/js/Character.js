@@ -1,6 +1,9 @@
+
+import { getRandom } from './utils';
+
 export default class Character {
   constructor(level, type = 'generic') {
-    this.level = level;
+    this.level = getRandom(1, level);
     this.attack = 0;
     this.defence = 0;
     this.health = 100;

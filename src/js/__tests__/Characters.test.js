@@ -19,7 +19,7 @@ const expectedDaemon = {
   attack: 10,
   defence: 40,
   health: 100,
-  level: 2,
+  level: 1,
 };
 
 const expectedMagician = {
@@ -27,7 +27,7 @@ const expectedMagician = {
   attack: 10,
   defence: 40,
   health: 100,
-  level: 3,
+  level: 1,
 };
 
 const expectedSwordsman = {
@@ -43,7 +43,7 @@ const expectedUndead = {
   attack: 25,
   defence: 25,
   health: 100,
-  level: 2,
+  level: 1,
 };
 
 const expectedVampire = {
@@ -51,7 +51,7 @@ const expectedVampire = {
   attack: 40,
   defence: 10,
   health: 100,
-  level: 3,
+  level: 1,
 };
 
 describe('constructor', () => {
@@ -61,12 +61,12 @@ describe('constructor', () => {
   });
 
   test('should return new Daemon', () => {
-    const hero = new Daemon(2);
+    const hero = new Daemon(1);
     expect(hero).toEqual(expectedDaemon);
   });
 
   test('should return new Magician', () => {
-    const hero = new Magician(3);
+    const hero = new Magician(1);
     expect(hero).toEqual(expectedMagician);
   });
 
@@ -76,12 +76,12 @@ describe('constructor', () => {
   });
 
   test('should return new Undead', () => {
-    const hero = new Undead(2);
+    const hero = new Undead(1);
     expect(hero).toEqual(expectedUndead);
   });
 
   test('should return new Vampire', () => {
-    const hero = new Vampire(3);
+    const hero = new Vampire(1);
     expect(hero).toEqual(expectedVampire);
   });
 

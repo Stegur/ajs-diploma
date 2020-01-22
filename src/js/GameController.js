@@ -27,7 +27,7 @@ export default class GameController {
     // TODO: load saved stated from stateService
     this.gamePlay.drawUi(getField());
 
-    const playerTeam = generateTeam([Bowman, Swordsman], 1, 2)
+    this.playerTeam = generateTeam([Bowman, Swordsman], 1, 2)
       .map((hero) => {
         const x = getRandom(0, 7);
         const y = getRandom(0, 1);
@@ -35,7 +35,7 @@ export default class GameController {
         return new PositionedCharacter(hero, position);
       });
 
-    const computerTeam = generateTeam([Undead, Vampire, Daemon], 1, 2)
+    this.computerTeam = generateTeam([Undead, Vampire, Daemon], 1, 2)
       .map((hero) => {
         const x = getRandom(0, 7);
         const y = getRandom(6, 7);
@@ -43,15 +43,35 @@ export default class GameController {
         return new PositionedCharacter(hero, position);
       });
 
-    this.gamePlay.redrawPositions([...playerTeam, ...computerTeam]);
+    this.gamePlay.redrawPositions([...this.playerTeam, ...this.computerTeam]);
+
+    this.cellEnter();
+    this.cellLeave();
   }
 
   onCellClick(index) {
     // TODO: react to click
   }
 
+  cellEnter() {
+    this.gamePlay.addCellEnterListener((index) => {
+      for (const hero of [...this.playerTeam, ...this.computerTeam]) {
+        if (index === hero.position) {
+          const tooltip = `\uD83C\uDF96${hero.character.level}\u2694${hero.character.attack}\uD83D\uDEE1${hero.character.defence}\u2764${hero.character.health}`;
+          this.gamePlay.showCellTooltip(tooltip, index);
+        }
+      }
+    });
+  }
+
   onCellEnter(index) {
     // TODO: react to mouse enter
+  }
+
+  cellLeave() {
+    this.gamePlay.addCellLeaveListener((index) => {
+      this.gamePlay.hideCellTooltip(index);
+    });
   }
 
   onCellLeave(index) {

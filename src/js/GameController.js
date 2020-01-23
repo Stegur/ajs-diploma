@@ -47,6 +47,34 @@ export default class GameController {
 
     this.cellEnter();
     this.cellLeave();
+
+    this.stateService.storage.step = 0;
+
+    this.cellClick();
+  }
+
+  cellClick() {
+    this.gamePlay.addCellClickListener((index) => {
+      // Убераем выделение с ячеек если оно было до клика
+      for (let i = 0; i < 64; i += 1) {
+        this.gamePlay.deselectCell(i);
+      }
+
+      for (const hero of [...this.playerTeam, ...this.computerTeam]) {
+        if (index === hero.position) {
+          // Проверка персонажа на играбельность
+          const isUndead = hero.character instanceof Undead;
+          const isDeamon = hero.character instanceof Daemon;
+          const isVampire = hero.character instanceof Vampire;
+
+          if (isUndead || isDeamon || isVampire) {
+            this.gamePlay.showError('Действие невозможно!');
+          } else {
+            this.gamePlay.selectCell(index);
+          }
+        }
+      }
+    });
   }
 
   onCellClick(index) {

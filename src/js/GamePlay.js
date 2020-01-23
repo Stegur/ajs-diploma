@@ -177,7 +177,8 @@ export default class GamePlay {
     this.loadGameListeners.forEach((o) => o.call(null));
   }
 
-  static showError(message) {
+  // eslint-disable-next-line class-methods-use-this
+  showError(message) {
     // eslint-disable-next-line no-alert
     alert(message);
   }
